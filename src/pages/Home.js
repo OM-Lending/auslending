@@ -119,9 +119,9 @@ function Home() {
 
         {/* Mission & Vision */}
         <Row className="mb-5">
-          <Col md={6} className="mb-4">
+          <Col md={6} className="mb-4 mb-md-0">
             <motion.div
-              className="content-card h-100"
+              className="content-card-mission"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -132,24 +132,25 @@ function Home() {
                   src={homeImage3}
                   alt="Our Mission"
                   className="img-fluid shadow-lg"
-                  style={{ width: "100%" }}
                 />
               </div>
-              <p className="text-muted">
-                Empower Australians with knowledge, resources, and expert
-                guidance to achieve long-term financial wellbeing through
-                property investment.
-              </p>
-              <p className="text-muted">
-                We provide tailored solutions and step-by-step support to
-                simplify the investment journey and help clients build lasting
-                wealth.
-              </p>
+              <div className="card-text-content">
+                <p className="text-muted">
+                  Empower Australians with knowledge, resources, and expert
+                  guidance to achieve long-term financial wellbeing through
+                  property investment.
+                </p>
+                <p className="text-muted">
+                  We provide tailored solutions and step-by-step support to
+                  simplify the investment journey and help clients build lasting
+                  wealth.
+                </p>
+              </div>
             </motion.div>
           </Col>
           <Col md={6}>
             <motion.div
-              className="content-card h-100"
+              className="content-card-mission"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
@@ -160,17 +161,19 @@ function Home() {
                   src={homeImage4}
                   alt="Our Approach"
                   className="img-fluid shadow-lg"
-                  style={{ width: "100%" }}
                 />
               </div>
-              <p className="text-muted">
-                Property investment should be simple, transparent, and
-                stress-free. We offer education, guidance, and lifetime support.
-              </p>
-              <p className="text-muted">
-                From first investment to portfolio growth, we're your strategic
-                partner in achieving financial freedom.
-              </p>
+              <div className="card-text-content">
+                <p className="text-muted">
+                  Property investment should be simple, transparent, and
+                  stress-free. We offer education, guidance, and lifetime
+                  support.
+                </p>
+                <p className="text-muted">
+                  From first investment to portfolio growth, we're your
+                  strategic partner in achieving financial freedom.
+                </p>
+              </div>
             </motion.div>
           </Col>
         </Row>
