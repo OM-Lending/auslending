@@ -1,97 +1,169 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import privacyImage from "../assets/AusB1.jpeg";
+import { useNavigate } from "react-router-dom";
+import heroImage from "../assets/Aus10.jpg";
+import "../pages/Home.css";
 
 function PrivacyPolicy() {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   return (
-    <Container
-    fluid
-    className="p-5 text-center"
-    style={{
-      backgroundImage: `url(${privacyImage})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      minHeight: "100vh",
-    }}
-  >
-    <div style={{ backgroundColor: "rgba(255,255,255,0.85)", borderRadius: "10px", padding: "2rem" }}>
-      {/* Title Section */}
-      <motion.h1
-        className="fw-bold text-primary"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+    <>
+      {/* Hero Section */}
+      <div
+        className="hero-section d-flex align-items-center justify-content-center text-white text-center"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          height: "50vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          position: "relative",
+        }}
       >
-        PRIVACY POLICY
-      </motion.h1>
+        <div
+          className="overlay"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+            zIndex: 1,
+          }}
+        ></div>
+        <motion.div
+          className="z-2 position-relative"
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="display-4 fw-bold">PRIVACY POLICY</h1>
+          <p className="lead">Honest. Reliable. Committed.</p>
+        </motion.div>
+      </div>
 
-      <motion.h2
-        className="text-secondary mb-5"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-      >
-        Honest. Reliable. Committed.
-      </motion.h2>
+      <Container fluid className="py-5 bg-light px-3 px-md-5">
+        {/* Introduction */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="content-card mb-5 text-center"
+        >
+          <h3 className="fw-bold">Your Privacy Matters to Us</h3>
+          <p className="text-muted mt-4">
+            At AUS LEADING ENTERPRISES, we are committed to protecting your
+            privacy and ensuring the security of your personal information. This
+            policy outlines how we collect, use, and safeguard your data.
+          </p>
+        </motion.div>
 
-      {/* Terms and Conditions Section */}
-      <Row className="mt-5">
-        <Col md={12}>
-          <motion.div
-            className="bg-white p-4 shadow-lg rounded mb-4"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
+        {/* Policy Sections */}
+        <Row className="mb-5">
+          <Col md={4} className="mb-4 mb-md-0">
+            <motion.div
+              className="content-card contact-card h-100 text-center"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="contact-card-content">
+                <h4 className="fw-bold">TERMS AND CONDITIONS</h4>
+                <p className="text-muted mt-4">
+                  The commercial terms and conditions will include details of
+                  product delivery, payment terms, credit limits, and deadlines
+                  in relation to your purchase of services.
+                </p>
+              </div>
+              <div className="contact-card-button">
+                <button
+                  className="btn-custom"
+                  onClick={() => navigate("/contact-us")}
+                >
+                  View Full Terms
+                </button>
+              </div>
+            </motion.div>
+          </Col>
+
+          <Col md={4} className="mb-4 mb-md-0">
+            <motion.div
+              className="content-card contact-card h-100 text-center"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <div className="contact-card-content">
+                <h4 className="fw-bold">COOKIE POLICY</h4>
+                <p className="text-muted mt-4">
+                  Our website privacy policy informs all users of any
+                  processing, collection, or sharing of personal information
+                  including cookies. We use cookies to enhance your browsing
+                  experience.
+                </p>
+              </div>
+              <div className="contact-card-button">
+                <button
+                  className="btn-custom"
+                  onClick={() => navigate("/contact-us")}
+                >
+                  Learn More
+                </button>
+              </div>
+            </motion.div>
+          </Col>
+
+          <Col md={4}>
+            <motion.div
+              className="content-card contact-card h-100 text-center"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2 }}
+            >
+              <div className="contact-card-content">
+                <h4 className="fw-bold">CUSTOMER DATA POLICY</h4>
+                <p className="text-muted mt-4">
+                  We protect your personal information including name, address,
+                  email, telephone number, bank details, and other private
+                  content with industry-standard security measures.
+                </p>
+              </div>
+              <div className="contact-card-button">
+                <button
+                  className="btn-custom"
+                  onClick={() => navigate("/contact-us")}
+                >
+                  Contact Us
+                </button>
+              </div>
+            </motion.div>
+          </Col>
+        </Row>
+
+        {/* CTA Section */}
+        <motion.div
+          className="cta-section text-white text-center"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <h3 className="fw-bold mb-3">Questions About Our Privacy Policy?</h3>
+          <p className="mb-4">
+            If you have any questions or concerns about our privacy practices,
+            please don't hesitate to contact us. We're here to help and ensure
+            your peace of mind.
+          </p>
+          <button
+            className="btn-custom-light"
+            onClick={() => navigate("/contact-us")}
           >
-            <h4 className="fw-bold text-dark">TERMS AND CONDITIONS</h4>
-            <p className="text-muted">
-              The commercial terms and conditions will include, among other things, details of product delivery, payment terms, credit limits, and deadlines in relation to your purchase of services and compensation. Please contact the Ausleading experts for the full version.
-            </p>
-            <Button variant="primary" onClick={() => navigate("/contact-us")}>Contact Us for Full Terms</Button>
-          </motion.div>
-        </Col>
-      </Row>
-
-      {/* Cookie Policy Section */}
-      <Row className="mt-5">
-        <Col md={12}>
-          <motion.div
-            className="bg-white p-4 shadow-lg rounded mb-4"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h4 className="fw-bold text-dark">COOKIE POLICY</h4>
-            <p className="text-muted">
-              Our website privacy policy will inform all users of any processing, collection, or sharing of personal information. This includes cookies. Cookies allow users to browse, shop, and view the site without logging in each time they visit.
-            </p>
-          </motion.div>
-        </Col>
-      </Row>
-
-      {/* Customer Data Policy Section */}
-      <Row className="mt-5">
-        <Col md={12}>
-          <motion.div
-            className="bg-white p-4 shadow-lg rounded mb-4"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h4 className="fw-bold text-dark">CUSTOMER DATA POLICY</h4>
-            <p className="text-muted">
-              The business will protect the customer's personal information, which may include the customer's: name, signature, address, email, telephone number, date of birth, medical history, bank details, photographs and videos, IP address, and other relevant private content.
-            </p>
-          </motion.div>
-        </Col>
-      </Row>
-    </div>
-  </Container>
+            Contact Us
+          </button>
+        </motion.div>
+      </Container>
+    </>
   );
 }
 
