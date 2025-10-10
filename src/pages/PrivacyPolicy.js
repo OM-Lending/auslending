@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import heroImage from "../assets/Aus10.jpg";
+import heroImage from "../assets/Aus10.webp";
 import "../pages/Home.css";
 
 function PrivacyPolicy() {

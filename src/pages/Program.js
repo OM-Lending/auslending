@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
-import program1 from "../assets/Aus10.jpg";
-import program2 from "../assets/Aus11.jpg";
-import program3 from "../assets/Aus12.jpg";
+import program1 from "../assets/Aus10.webp";
+import program2 from "../assets/Aus11.webp";
+import program3 from "../assets/Aus12.webp";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 function ProgramsPage() {
@@ -12,19 +12,19 @@ function ProgramsPage() {
       title: "Invest Smarter Today",
       duration: "21 Days",
       participants: "10 Participants",
-      image: program1
+      image: program1,
     },
     {
       title: "Marketing Your Product",
       duration: "7 Days",
       participants: "17 Participants",
-      image: program2
+      image: program2,
     },
     {
       title: "How To Start Your Business",
       duration: "10 Days",
       participants: "29 Participants",
-      image: program3
+      image: program3,
     },
   ];
 
@@ -53,15 +53,22 @@ function ProgramsPage() {
             >
               <Card className="shadow-lg rounded">
                 <Card.Body>
-                  <Card.Title className="fw-bold text-dark">{program.title}</Card.Title>
-                  <Card.Img src={program.image} style={{height: '300px'}}/>
+                  <Card.Title className="fw-bold text-dark">
+                    {program.title}
+                  </Card.Title>
+                  <Card.Img src={program.image} style={{ height: "300px" }} />
                   <Card.Text className="text-muted">
                     Duration: {program.duration}
                     <br />
                     Participants: {program.participants}
                     <br />
                   </Card.Text>
-                  <Button variant="primary" onClick={() => navigate("/contact-us")}>More Details</Button>
+                  <Button
+                    variant="primary"
+                    onClick={() => navigate("/contact-us")}
+                  >
+                    More Details
+                  </Button>
                 </Card.Body>
               </Card>
             </motion.div>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import aboutImage from "../assets/AusB2.jpg";
-import heroImage from "../assets/AusB2.jpg";
+import aboutImage from "../assets/AusB2.webp";
+import heroImage from "../assets/AusB2.webp";
 import { useNavigate } from "react-router-dom";
 import "../pages/Home.css";
 

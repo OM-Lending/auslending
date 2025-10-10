@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import homeImage from "../assets/AusBack.jpeg";
-import homeImage1 from "../assets/AusB1.jpeg";
-import homeImage2 from "../assets/AusB5.jpg";
-import homeImage3 from "../assets/Aus5.jpg";
-import homeImage4 from "../assets/Aus7.jpg";
+import homeImage from "../assets/AusBack.webp";
+import homeImage1 from "../assets/AusB1.webp";
+import homeImage2 from "../assets/AusB5.webp";
+import homeImage3 from "../assets/Aus5.webp";
+import homeImage4 from "../assets/Aus7.webp";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 

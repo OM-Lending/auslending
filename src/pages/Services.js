@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import investImg from "../assets/Aus10.jpg";
-import financeImg from "../assets/Aus11.jpg";
-import supportImg from "../assets/Aus12.jpg";
-import heroImage from "../assets/Aus7.jpg";
+import investImg from "../assets/Aus10.webp";
+import financeImg from "../assets/Aus11.webp";
+import supportImg from "../assets/Aus12.webp";
+import heroImage from "../assets/Aus7.webp";
 import { useNavigate } from "react-router-dom";
 import "../pages/Home.css";
 

@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import OurInfoImage from "../assets/AusB4.jpg";
-import OurInfoImage2 from "../assets/AusB5.jpg";
-import heroImage from "../assets/Aus6.jpg";
+import OurInfoImage from "../assets/AusB4.webp";
+import OurInfoImage2 from "../assets/AusB5.webp";
+import heroImage from "../assets/Aus6.webp";
 import "../pages/Home.css";
 
 function OurInfo() {

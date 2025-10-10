@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import contactHeroImage from "../assets/AusB3.jpg";
+import contactHeroImage from "../assets/AusB3.webp";
 import "../pages/Home.css";
 
 function ContactUs() {
