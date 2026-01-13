@@ -129,7 +129,7 @@ function ContactUs() {
                   Come visit our office in Hobart.
                 </p>
                 <p className="text-muted">
-                  Level 2, 152 Macquarie St
+                  Level 2, 162 Macquarie St
                   <br />
                   Hobart TAS 7000
                 </p>
