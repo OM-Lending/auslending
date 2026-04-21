@@ -126,12 +126,12 @@ function ContactUs() {
               <div className="contact-card-content">
                 <h4 className="fw-bold">Visit Us</h4>
                 <p className="text-muted mt-4">
-                  Come visit our office in Hobart.
+                  Come visit our office
                 </p>
                 <p className="text-muted">
-                  Level 2, 162 Macquarie St
+                  Hobart: Level 2, 162 Macquarie St, Hobart TAS 7000
                   <br />
-                  Hobart TAS 7000
+                  Launceston: Level 1, 47 Cameron St, Launceston TAS 7250
                 </p>
               </div>
               <div className="contact-card-button">
