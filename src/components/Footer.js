@@ -77,7 +77,7 @@ function Footer() {
                 <span className="text-light-gray">
                   Launceston Office: 
                   <br />
-                  Level 1, 27 Cameron St, Launceston TAS 7250
+                  Level 1, 47 Cameron St, Launceston TAS 7250
                 </span>
               </li>
               <li className="mb-2">
