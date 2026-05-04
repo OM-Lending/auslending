@@ -82,7 +82,7 @@ function Footer() {
                <li className="mb-2">
                 <i className="contact-icon">📍</i>
                 <span className="text-light-gray">
-                  Brisbane Office: Level 7，40 Creek St, Brisbane QLD 4000
+                  Brisbane Office: Level 7, 40 Creek St, Brisbane QLD 4000
                 </span>
               </li>
               <li className="mb-2">
