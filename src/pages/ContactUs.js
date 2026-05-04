@@ -132,6 +132,8 @@ function ContactUs() {
                   Hobart: Level 2, 162 Macquarie St, Hobart TAS 7000
                   <br />
                   Launceston: Level 1, 47 Cameron St, Launceston TAS 7250
+                  <br />
+                  Brisbane: Level 7, 40 Creek St, Brisbane QLD 4000
                 </p>
               </div>
               <div className="contact-card-button">
