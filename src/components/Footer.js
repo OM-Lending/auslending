@@ -70,14 +70,19 @@ function Footer() {
               <li className="mb-2">
                 <i className="contact-icon">📍</i>
                 <span className="text-light-gray">
-                  Hobart Office: 
-                  <br />
-                  Level 2, 162 Macquarie St, Hobart TAS 7000
+                  Hobart Office: Level 2, 162 Macquarie St, Hobart TAS 7000
                 </span>
+              </li>
+              <li className="mb-2">
+                <i className="contact-icon">📍</i>
                 <span className="text-light-gray">
-                  Launceston Office: 
-                  <br />
-                  Level 1, 47 Cameron St, Launceston TAS 7250
+                  Launceston Office: Level 1, 47 Cameron St, Launceston TAS 7250
+                </span>
+              </li>
+               <li className="mb-2">
+                <i className="contact-icon">📍</i>
+                <span className="text-light-gray">
+                  Brisbane Office: Level 7，40 Creek St, Brisbane QLD 4000
                 </span>
               </li>
               <li className="mb-2">
