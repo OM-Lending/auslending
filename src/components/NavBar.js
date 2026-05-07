@@ -11,7 +11,7 @@ function NavigationBar() {
           <img
             src={`${process.env.PUBLIC_URL}/AusleadingLogo.png`}
             alt="AUS LEADING Logo"
-            width="80"
+            width="40"
             height="40"
             className="brand-logo"
           />
