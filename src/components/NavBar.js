@@ -9,7 +9,7 @@ function NavigationBar() {
       <Container>
         <Link to="/" className="navbar-brand navbar-brand-custom">
           <img
-            src={`${process.env.PUBLIC_URL}/AusLogo.png`}
+            src={`${process.env.PUBLIC_URL}/AusleadingLogo.png`}
             alt="AUS LEADING Logo"
             width="80"
             height="40"
