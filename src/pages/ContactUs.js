@@ -134,6 +134,8 @@ function ContactUs() {
                   Launceston: Level 1, 47 Cameron St, Launceston TAS 7250
                   <br />
                   Brisbane: Level 7, 40 Creek St, Brisbane QLD 4000
+                  <br />
+                  Melbourne: 141 Cardigan St, Carlton VIC 3053
                 </p>
               </div>
               <div className="contact-card-button">
