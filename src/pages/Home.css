@@ -194,6 +194,34 @@
   line-height: 1;
 }
 
+/* Contact Page office address */
+.office-addresses {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.office-address {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  column-gap: 8px;
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.office-city {
+  font-weight: 600;
+}
+
+@media (max-width: 1199px) {
+  .office-address {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+}
+
 /* Contact Cards with Button Alignment */
 .content-card.contact-card {
   display: flex;
