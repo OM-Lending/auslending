@@ -105,7 +105,7 @@ function Footer() {
         <Row className="border-top border-secondary pt-3 pb-3">
           <Col className="text-center">
             <p className="mb-0 text-light-gray">
-              &copy; {new Date().getFullYear()} AUS LEADING ENTERPRISES. All
+              &copy; {new Date().getFullYear()} AUS LEADING ENTERPRISES ABN 47 643 475 781. All
               rights reserved.
             </p>
           </Col>
