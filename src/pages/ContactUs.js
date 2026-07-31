@@ -126,27 +126,30 @@ function ContactUs() {
               <div className="contact-card-content">
                 <h4 className="fw-bold">Visit Us</h4>
                 <p className="text-muted mt-4">
-                  Come visit our office
+                  Come visit our offices
                 </p>
-                <p className="text-muted">
-                  Hobart: Level 2, 162 Macquarie St, Hobart TAS 7000
-                  <br />
-                  Launceston: Level 1, 47 Cameron St, Launceston TAS 7250
-                  <br />
-                  Brisbane: Level 7, 40 Creek St, Brisbane QLD 4000
-                  <br />
-                  Melbourne: 141 Cardigan St, Carlton VIC 3053
-                </p>
-              </div>
-              <div className="contact-card-button">
-                <a
-                  href="https://maps.google.com/?q=Level+2,+152+Macquarie+St,+Hobart+TAS+7000"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-custom-outline"
-                >
-                  Get Directions
-                </a>
+                
+                <div className="office-addresses text-muted">
+                  <div className="office-address">
+                    <span className="office-city">Hobart:</span>
+                    <span>Level 2, 162 Macquarie St, Hobart TAS 7000</span>
+                  </div>
+
+                  <div className="office-address">
+                    <span className="office-city">Launceston:</span>
+                    <span>Level 1, 47 Cameron St, Launceston TAS 7250</span>
+                  </div>
+
+                  <div className="office-address">
+                    <span className="office-city">Brisbane:</span>
+                    <span>Level 7, 40 Creek St, Brisbane QLD 4000</span>
+                  </div>
+
+                  <div className="office-address">
+                    <span className="office-city">Melbourne:</span>
+                    <span>141 Cardigan St, Carlton VIC 3053</span>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </Col>
