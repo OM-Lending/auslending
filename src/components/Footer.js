@@ -85,6 +85,12 @@ function Footer() {
                   Brisbane Office: Level 7, 40 Creek St, Brisbane QLD 4000
                 </span>
               </li>
+                 <li className="mb-2">
+                <i className="contact-icon">📍</i>
+                <span className="text-light-gray">
+                  Melbourne Office: 141 Cardigan St, Carlton VIC 3053
+                </span>
+              </li>
               <li className="mb-2">
                 <i className="contact-icon">📧</i>
                 <a href="mailto:info@ausleading.com.au" className="footer-link">
